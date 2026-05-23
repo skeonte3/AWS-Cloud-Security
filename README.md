@@ -12,6 +12,8 @@
 ### 1. IAM — Identity and Access Management
 **Principle of Least Privilege**
 
+[IAM User] <img width="1916" height="954" alt="IAM User" src="https://github.com/user-attachments/assets/ede47dbe-15ea-454c-a113-abefd32ac5bf" />
+
 - Created a dedicated IAM user `security-analyst-readonly` with read-only permissions
 - Attached `SecurityAudit` policy — provides read-only access to review security configurations across all AWS services
 - Disabled root account usage for daily tasks — root account reserved for billing and account management only
@@ -23,6 +25,8 @@ Limiting user permissions to only what is needed reduces the blast radius of a c
 
 ### 2. CloudTrail — API Activity Logging
 **Audit Logging & Monitoring**
+
+[Cloudtrail User] <img width="1913" height="954" alt="Cloudtrail" src="https://github.com/user-attachments/assets/10012ba7-2d4a-4e62-8b74-a18f41c6c50b" />
 
 - Created trail named `security-audit-trail`
 - Configured to log all Management Events (Read and Write)
@@ -36,6 +40,12 @@ CloudTrail provides a complete audit log of every API call made in the account �
 
 ### 3. S3 Bucket Security
 **Data Protection & Encryption in Transit**
+
+[S3 Bucket creation] <img width="1914" height="955" alt="S3 Bucket creation" src="https://github.com/user-attachments/assets/f7026cfb-047a-4903-8bd1-fc40a2d373d8" />
+
+[S3 Bucket Permission] <img width="1916" height="776" alt="S3 Bucket permission" src="https://github.com/user-attachments/assets/2ee46ada-ad01-42ff-b639-c4159747d7f6" />
+
+[S3 Bucket Policy] <img width="1283" height="672" alt="Bucket Policy" src="https://github.com/user-attachments/assets/42842495-5016-4a5e-b215-e5d0f97ca945" />
 
 - Created dedicated S3 bucket for security audit logs
 - Enabled Block All Public Access — prevents accidental public exposure of sensitive data
